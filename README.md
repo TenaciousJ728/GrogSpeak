@@ -3,13 +3,13 @@ Grok TTS for SillyTavern, but with extra grog 🍺
 
 <img width="835" height="525" alt="Screenshot 2026-04-11 220739" src="https://github.com/user-attachments/assets/19426757-8347-49df-a438-336bc5861441" />
 
-## What is GrogSpeak?
+## ❓ What is GrogSpeak?
 A local-only proxy server run alongside SillyTavern, enabling it to use [xAI/Grok](https://docs.x.ai/developers/model-capabilities/audio/voice) for TTS. It takes ST's OpenAI-compatible calls and translates them for use with Grok's API, fetching audible dictation of your ST chat with some gusto and emotion.
 
 No mods necessary! Just some dependencies. And then you just set, launch, and go.
 
 
-## Setup
+## 🛠️ Setup
 This will assume you're setting up for a Windows machine, but should also work for Linux with some minor adaptation.
 
 ### 1. Get xAI authorization
@@ -29,7 +29,7 @@ This will assume you're setting up for a Windows machine, but should also work f
 - You more than likely already have python installed. But if not, fetch the latest standalone installer [here](https://www.python.org/downloads/) and install it.
 - Open the Terminal/Command Prompt and run this line: `pip install flask requests`
 
-### 3. Fetch, Edit, run GrogSpeak
+### 3. Fetch, Edit, Run GrogSpeak
 - [Download GrogSpeak](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip). Extract `grogspeak.py` and `Start GrogSpeak.bat`, and place them somewhere memorable.
 - Open `grogspeak.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
 - Open `Start GrogSpeak.bat` to run GrogSpeak. You should see the following output, meaning GrogSpeak is ready:
