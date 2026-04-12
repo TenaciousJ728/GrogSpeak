@@ -30,9 +30,9 @@ This will assume you're setting up for a Windows machine, but should also work f
 - Open the Terminal/Command Prompt and run this line: `pip install flask requests`
 
 ### 3. Fetch, Edit, Run GrogSpeak
-- [Download GrogSpeak](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip). Extract `grogspeak.py` and `Start GrogSpeak.bat`, and place them somewhere memorable.
-- Open `grogspeak.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
-- Open `Start GrogSpeak.bat` to run GrogSpeak. You should see the following output, meaning GrogSpeak is ready:
+- [Download GrogSpeak](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip). Extract `GrogSpeak.py` and `StartGrogSpeak.bat`, and place them somewhere memorable.
+- Open `GrogSpeak.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
+- Open `StartGrogSpeak.bat` to run GrogSpeak. You should see the following output, meaning GrogSpeak is ready:
 ```
 ============================================================
                      🍺 GrogSpeak 🔊
@@ -45,7 +45,7 @@ SETTINGS:
 💢 INTENSITY = heavy
 ℹ️ DEBUG_EMBELISHMENT = True
 
- * Serving Flask app 'grogSpeak'
+ * Serving Flask app 'GrogSpeak'
  * Debug mode: off
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on http://127.0.0.1:18790
