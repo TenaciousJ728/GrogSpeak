@@ -29,9 +29,9 @@ This will assume you're setting up for a Windows machine, but should also work f
 - You more than likely already have python installed. But if not, fetch the latest standalone installer [here](https://www.python.org/downloads/) and install it.
 - Open the Terminal/Command Prompt and run this line: `pip install flask requests`
 
-### 3. Fetch, edit, run GrogSpeak
+### 3. Fetch, Edit, run GrogSpeak
 - [Download GrogSpeak](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip). Extract `grogspeak.py` and `Start GrogSpeak.bat`, and place them somewhere memorable.
-- Open `grogspeak.py.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
+- Open `grogspeak.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
 - Open `Start GrogSpeak.bat` to run GrogSpeak. You should see the following output, meaning GrogSpeak is ready:
 ```
 ============================================================
@@ -57,7 +57,7 @@ Press CTRL+C to quit
 
 - Access your SillyTavern server through your browser.
 - Click on the Extensions icon (the three cubes), and then expand the "TTS" extension.
-- Configure the TTS options as depicted in the screenshot. The outlined options are required.
+- Configure the TTS options as depicted in the screenshot above. The outlined options are required.
 - Click the "Reload" button to reveal some settings that may be hidden.
 
 ### 5. Test!
