@@ -12,7 +12,7 @@ No mods necessary! Just some dependencies. And then you just set, launch, and go
 ## 🛠️ Setup
 This will assume you're setting up for a Windows machine, but should also work for Linux with some minor adaptation.
 
-### 1. Get xAI authorization
+### 1. Get xAI Authorization
 <!-- <img width="932" height="274" alt="Screenshot 2026-03-27 100148" src="https://github.com/user-attachments/assets/a754bb83-99b4-4790-958f-3143829006a3" /> -->
 
 - Go to the [xAI API Console](https://console.x.ai/) and get logged in. Sign up if you haven't already.
@@ -24,7 +24,7 @@ This will assume you're setting up for a Windows machine, but should also work f
 >
 > You can only purchase a minimum of $5 in credits, but it'll be WAYYYYYYYY more than enough to test. Grok's API costs are **dirt-cheap**!
 
-### 2. Setup python
+### 2. Setup Python
 - Access your PC/server in which you're running SillyTavern.
 - You more than likely already have python installed. But if not, fetch the latest standalone installer [here](https://www.python.org/downloads/) and install it.
 - Open the Terminal/Command Prompt and run this line: `pip install flask requests`
