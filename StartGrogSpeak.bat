@@ -1,6 +1,6 @@
 @echo off
 
-python grogSpeak.py
+python GrogSpeak.py
 
 echo.
 echo Proxy stopped. Press any key to close...
