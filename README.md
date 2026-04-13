@@ -3,62 +3,71 @@ Grok TTS for SillyTavern, but with extra grog 🍺
 
 <img width="835" height="525" alt="Screenshot 2026-04-11 220739" src="https://github.com/user-attachments/assets/19426757-8347-49df-a438-336bc5861441" />
 
-## ❓ What is GrogSpeak?
-A local-only proxy server run alongside SillyTavern, enabling it to use [xAI/Grok](https://docs.x.ai/developers/model-capabilities/audio/voice) for TTS. It takes ST's OpenAI-compatible calls and translates them for use with Grok's API, fetching audible dictation of your ST chat with some gusto and emotion.
+A proxy that runs alongside your [SillyTavern](https://sillytavern.app/) instance, enabling its TTS feature to use [xAI/Grok](https://docs.x.ai/developers/model-capabilities/audio/voice) proper.
 
-No mods necessary! Just some dependencies. And then you just set, launch, and go.
+No SillyTavern mods necessary! Just some dependencies.
+
+## ✨ Features
+- Grok TTS chat dictation by it's full cast of voices: Eve, Ara, Rex, Sal, Leo
+- Smart Embellishment - Use Grok to make TTS more naturally expressive
+- Lightweight and quick to launch
+- Fully local proxy - Your chat data and API key remains secure
 
 
-## 🛠️ Setup
-This will assume you're setting up for a Windows machine, but should also work for Linux with some minor adaptation.
+## 🛠️ Quick Setup
 
-### 1. Get xAI Authorization
+### 1. Get xAI Access
 <!-- <img width="932" height="274" alt="Screenshot 2026-03-27 100148" src="https://github.com/user-attachments/assets/a754bb83-99b4-4790-958f-3143829006a3" /> -->
 
-- Go to the [xAI API Console](https://console.x.ai/) and get logged in. Sign up if you haven't already.
-- Proceed to create a new API key. Take note of the newly generated key for later. It looks something like `xai-xxXXxXXxXxXxXxXxxXXxXXxxxxxxXxXXXXXXXXxXXXxXXXxxxXXxXXXxxXxXXXXXXxXxxXxxxXXxXXxx`.
-- Ensure you have a credits balance.
+- Log into [xAI API Console](https://console.x.ai/)
+- Generate a new API key
+- Ensure you have a credits balance
 
-> [!WARNING]
-> If your credit balance is empty, purchase some credits. Otherwise, you will not be able to use the API at all.
->
-> You can only purchase a minimum of $5 in credits, but it'll be WAYYYYYYYY more than enough to test. Grok's API costs are **dirt-cheap**!
+### 2. Install Dependencies
+- Install [python](https://www.python.org/downloads/)
+- Run `pip install flask requests`
 
-### 2. Setup Python
-- Access your PC/server in which you're running SillyTavern.
-- You more than likely already have python installed. But if not, fetch the latest standalone installer [here](https://www.python.org/downloads/) and install it.
-- Open the Terminal/Command Prompt and run this line: `pip install flask requests`
+### 3. Download & Configure
+- [Download the repo](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip) and extract it
+- Edit `GrogSpeak.py` and paste your API key on the `XAI_KEY` line
+- Tweak [`OPTIONAL SETTINGS`](#%EF%B8%8F-settings) to taste
+ 
+### 4. Run GrogSpeak
+Open `StartGrogSpeak.bat` or run `python GrogSpeak.py` in the same dir.
 
-### 3. Fetch, Edit, Run GrogSpeak
-- [Download GrogSpeak](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip). Extract `GrogSpeak.py` and `StartGrogSpeak.bat`, and place them somewhere memorable.
-- Open `GrogSpeak.py` in a text editor like Notepad. Find "XAI_KEY" in line 7 and paste your Grok API key within the quotation marks. Save, and close.
-- Open `StartGrogSpeak.bat` to run GrogSpeak. You should see the following output, meaning GrogSpeak is ready:
-```
-============================================================
-                     🍺 GrogSpeak 🔊
-              Grok TTS Proxy for SillyTavern
-============================================================
-ver 2026.04.11
+### 5. Configure in SillyTavern
+Open `TTS` extension and set...
 
-SETTINGS:
-✨ EMBELLISH_TTS = True
-💢 INTENSITY = heavy
-ℹ️ DEBUG_EMBELISHMENT = True
+- **Select TTS Provider** → `OpenAI Compatible` (click **Reload**)
+- [x] **Enabled**
+- [x] **Pass Asterisks to TTS Engine**
+- **Provider Endpoint** → `http://127.0.0.1:18790/v1`
+- **Available Voices** → `Eve,Ara,Rex,Sal,Leo`
 
- * Serving Flask app 'GrogSpeak'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:18790
-Press CTRL+C to quit
-```
-...but we're not done yet!
-### 4. Configure SillyTavern
-<img width="400" height="759" alt="Screenshot_20260412-085224" src="https://github.com/user-attachments/assets/e13692c6-7136-49b7-be4d-db341498f2bd" />
+### 6. Test!
+Click **Available Voices** to test.
 
-- Access your SillyTavern server through your browser.
-- Click on the Extensions icon (the three cubes), and then expand the "TTS" extension.
-- Configure the TTS options as depicted in the screenshot above. The outlined options are required.
-- Click the "Reload" button to reveal some settings that may be hidden.
 
-### 5. Test!
-In the same TTS options menu, you can test by clicking the "Available voices" button. If you hear a voice, you're done! 🎉 Now you can tweak the other TTS options to taste.
+## ⚙️ Settings
+
+- `EMBELLISH_TTS` → `True` | `False`
+Whether or not to include [inline and wrapping tags](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech#inline-tags)to make TTS more expressive. Grok will perform the embellishment before it is sent to the TTS model.
+
+- `INTENSITY` → `light` | `medium` | `heavy`
+The amount of tags to insert at embellishment.
+
+- `DEBUG_EMBELISHMENT` → `True` | `False`
+Whether or not to print the embellished text in the GrokSpeak console.
+
+
+## 📝 Notes
+- For long messages, consider enabling **Narrate by paragraphs** in the TTS extension
+
+
+## ⚖️ Legal
+
+GrogSpeak is made by TenaciousJ728
+- [MIT License](https://github.com/TenaciousJ728/GrogSpeak/blob/main/LICENSE)
+- An unoffical tool for SillyTavern
+- Runs independently of SillyTavern
+- TenaciousJ728 is in no way affiliated with SillyTavern.
