@@ -24,7 +24,8 @@ No SillyTavern mods necessary! Just some dependencies.
 - Ensure you have a credits balance
 
 ### 2. Install Dependencies
-- Install [python](https://www.python.org/downloads/)
+- Install python
+    - **Windows:** Go [here](https://www.python.org/downloads/) and get the standalone installer. Enable `Add python.exe to PATH` and proceed to install.
 - Install Flask
     - **Windows:** Run `pip install flask requests`
     - **Debian-based Linux:** `sudo apt install python3-flask -y`
