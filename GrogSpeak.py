@@ -8,8 +8,8 @@ XAI_KEY = "xai-xxXXxXXxXxXxXxXxxXXxXXxxxxxxXxXXXXXXXXxXXXxXXXxxxXXxXXXxxXxXXXXXX
 
 # ============ OPTIONAL SETTINGS =============
 EMBELLISH_TTS = True # Set to True to have Grok process your ST chat for more lively, expressive TTS
-INTENSITY = "heavy" # "light", "medium", "heavy"
-DEBUG_EMBELISHMENT = True # ← Set to True to see the exact processed ST chat being sent to TTS
+INTENSITY = "medium" # "light", "medium", "heavy"
+DEBUG_EMBELISHMENT = False # ← Set to True to see the exact processed ST chat being sent to TTS
 # ============================================
 
 VOICE_MAP = {
