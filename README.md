@@ -25,7 +25,9 @@ No SillyTavern mods necessary! Just some dependencies.
 
 ### 2. Install Dependencies
 - Install [python](https://www.python.org/downloads/)
-- Run `pip install flask requests`
+- Install Flask
+    - **Windows:** Run `pip install flask requests`
+    - **Debian-based Linux:** `sudo apt install python3-flask -y`
 
 ### 3. Download & Configure
 - [Download the repo](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip) and extract it
@@ -33,19 +35,21 @@ No SillyTavern mods necessary! Just some dependencies.
 - Tweak [`OPTIONAL SETTINGS`](#%EF%B8%8F-settings) to taste
  
 ### 4. Run GrogSpeak
-Open `StartGrogSpeak.bat` or run `python GrogSpeak.py` in the same dir.
+- **Windows:** Open `StartGrogSpeak.bat` or run `python GrogSpeak.py` in the same dir
+- **Linux:** Run `python3 GrogSpeak.py` in the same dir
 
 ### 5. Configure in SillyTavern
 Open `TTS` extension and set...
 
-- **Select TTS Provider** → `OpenAI Compatible` (click **Reload**)
+- **Select TTS Provider** → `OpenAI Compatible`
 - [x] **Enabled**
 - [x] **Pass Asterisks to TTS Engine**
 - **Provider Endpoint** → `http://127.0.0.1:18790/v1`
 - **Available Voices** → `Eve,Ara,Rex,Sal,Leo`
+Then click the **Reload** button.
 
 ### 6. Test!
-Click **Available Voices** to test.
+Click **Available Voices** to go testing!
 
 
 ## ⚙️ Settings
