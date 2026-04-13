@@ -51,7 +51,7 @@ Click **Available Voices** to test.
 ## ⚙️ Settings
 
 - `EMBELLISH_TTS` → `True` | `False`
-Whether or not to include [inline and wrapping tags](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech#inline-tags)to make TTS more expressive. Grok will perform the embellishment before it is sent to the TTS model.
+Whether or not to include [inline and wrapping tags](https://docs.x.ai/developers/model-capabilities/audio/text-to-speech#inline-tags) to make TTS more expressive. Grok will perform the embellishment before it is sent to the TTS model.
 
 - `INTENSITY` → `light` | `medium` | `heavy`
 The amount of tags to insert at embellishment.
