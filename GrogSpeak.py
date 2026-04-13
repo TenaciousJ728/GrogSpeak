@@ -121,7 +121,7 @@ def tts():
     payload = {
         "text": processed_text,
         "voice_id": xai_voice,
-        "language": "en"
+        "language": "auto"
     }
 
     r = requests.post("https://api.x.ai/v1/tts",
