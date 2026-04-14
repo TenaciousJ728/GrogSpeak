@@ -46,7 +46,8 @@ Open `TTS` extension and set...
 - **Select TTS Provider** → `OpenAI Compatible`
 - [x] **Enabled**
 - [x] **Pass Asterisks to TTS Engine**
-- **Provider Endpoint** → `http://127.0.0.1:18790/v1` or `http://host.docker.internal:18790/v1`
+- **Provider Endpoint** → `http://127.0.0.1:18790/v1`
+    - **Docker users**: `http://host.docker.internal:18790/v1` 
 - **Available Voices** → `Eve,Ara,Rex,Sal,Leo`
 Then click the **Reload** button.
 
