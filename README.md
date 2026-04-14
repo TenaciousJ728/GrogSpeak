@@ -1,14 +1,14 @@
 # GrogSpeak
-Grok TTS for SillyTavern, but with extra grog 🍺
+xAI (Grok) TTS for SillyTavern, but with extra grog 🍺
 
-<img width="835" height="525" alt="Screenshot 2026-04-11 220739" src="https://github.com/user-attachments/assets/19426757-8347-49df-a438-336bc5861441" />
+<img width="835" height="509" alt="Screenshot 2026-04-13 190824" src="https://github.com/user-attachments/assets/4c790b20-ed40-4789-8a85-033b2d266b0f" />
 
-A proxy that runs alongside your [SillyTavern](https://sillytavern.app/) instance, enabling its TTS feature to use [xAI/Grok](https://docs.x.ai/developers/model-capabilities/audio/voice) proper.
+A proxy that runs alongside your [SillyTavern](https://sillytavern.app/) instance, enabling its TTS feature to use [xAI (Grok)](https://docs.x.ai/developers/model-capabilities/audio/voice) proper.
 
 No SillyTavern mods necessary! Just some dependencies.
 
 ## ✨ Features
-- Grok TTS chat dictation by it's full cast of voices: Eve, Ara, Rex, Sal, Leo
+- xAI TTS chat dictation by its full cast of voices: Eve, Ara, Rex, Sal, Leo
 - Smart Embellishment - Use Grok to make TTS more naturally expressive
 - Lightweight and quick to launch
 - Fully local proxy - Your chat data and API key remains secure
@@ -62,7 +62,7 @@ Whether or not to include [inline and wrapping tags](https://docs.x.ai/developer
 The amount of tags to insert at embellishment.
 
 - `DEBUG_EMBELISHMENT` → `True` | `False`
-Whether or not to print the embellished text in the GrokSpeak console.
+Whether or not to print the embellished text in the GrogSpeak console.
 
 
 ## 📝 Notes
@@ -75,4 +75,4 @@ GrogSpeak is made by TenaciousJ728
 - [MIT License](https://github.com/TenaciousJ728/GrogSpeak/blob/main/LICENSE)
 - An unoffical tool for SillyTavern
 - Runs independently of SillyTavern
-- TenaciousJ728 is in no way affiliated with SillyTavern.
+- TenaciousJ728 is in no way affiliated with SillyTavern, xAI, nor 𝕏.
