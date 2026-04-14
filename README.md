@@ -29,7 +29,7 @@ No SillyTavern mods necessary! Just some dependencies.
     - **Windows:** Go [here](https://www.python.org/downloads/) and get the standalone installer. Enable `Add python.exe to PATH` and proceed to install.
 - Install Flask
     - **Windows:** Run `pip install flask requests`
-    - **Debian-based Linux:** `sudo apt install python3-flask -y`
+    - **Debian-based Linux:** `pip install flask` or `sudo apt install python3-flask -y`
 
 ### 3. Download & Configure
 - [Download the repo](https://github.com/TenaciousJ728/GrogSpeak/archive/refs/heads/main.zip) and extract it
