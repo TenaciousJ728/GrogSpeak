@@ -140,7 +140,7 @@ def tts():
 
 
 if __name__ == "__main__":
-    print("=" * 60 + "\n" + " " * 21 + "🍺 GrogSpeak 🔊\n" + " " * 14 + "Grok TTS Proxy for SillyTavern\n" + "=" * 60)
+    print("=" * 60 + "\n" + " " * 21 + "🍺 GrogSpeak 🔊\n" + " " * 10 + "xAI (Grok) TTS Proxy for SillyTavern\n" + "=" * 60)
     print("ver 2026.04.11\n")
     print(f"SETTINGS:\n✨ EMBELLISH_TTS = {EMBELLISH_TTS}\n💢 INTENSITY = {INTENSITY}\nℹ️ DEBUG_EMBELISHMENT = {DEBUG_EMBELISHMENT}\n")
     app.run(host="127.0.0.1", port=18790, debug=False)
