@@ -12,6 +12,7 @@ No SillyTavern mods necessary! Just some dependencies.
 - Smart Embellishment - Use Grok to make TTS more naturally expressive
 - Lightweight and quick to launch
 - Fully local proxy - Your chat data and API key remains secure
+- Supports Docker SillyTavern instances
 
 
 ## 🛠️ Quick Setup
@@ -45,7 +46,7 @@ Open `TTS` extension and set...
 - **Select TTS Provider** → `OpenAI Compatible`
 - [x] **Enabled**
 - [x] **Pass Asterisks to TTS Engine**
-- **Provider Endpoint** → `http://127.0.0.1:18790/v1`
+- **Provider Endpoint** → `http://127.0.0.1:18790/v1` or `http://host.docker.internal:18790/v1`
 - **Available Voices** → `Eve,Ara,Rex,Sal,Leo`
 Then click the **Reload** button.
 
